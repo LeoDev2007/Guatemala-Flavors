@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guatemala Flavors</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Google Fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome-->
+
+    <script src="https://kit.fontawesome.com/99d1235829.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="images/logo_c.png"image/x-icon">
+</head>
+
+<body>
+
+    <!-- Menu do Site -->
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/images/logo_c.png">
+            </div>
+            <div class="itens">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#order">Your Order</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!--Home do Site-->
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h2>Guatemala in one dish</h2>
+            <h3>Order food for 2 WITH BONUS BEVERAGE FREE</h3>
+            <a href="#order">Place your Order</a>
+        </div>
+    </section>
+
+    <!--Sobre do Site-->
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Us</h3>
+                    <p>Our main commitment is to offer an entire experience, Guatemala has the best place to enjoy and
+                        please your plans, our restaurant is of a very good design and always keeping the quality that
+                        characterizes us in a cozy and comfortable environment.
+                    </p>
+            </div>
+            <div class="about-image">
+                <img src="images/pexels-yente-van-eynde-2403391.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!--Cardápio do Site-->
+
+    <section class="menu" id="menu">
+        <h1>Our Menu</h1>
+
+        <div class="card-container">
+
+            <!--Paches-->
+            <div class="card">
+                <div class="card-image"><img src="images/pache.jpeg"></div>
+
+                <div class="card-text">
+                    <h3>Paches</h3>
+                    <p>Made with potatoes and a message with enough tomato to give that red color -and great flavor-
+                        to one of the classic dishes on Thursdays. It tastes better if it brings chili and chicken.
+                    </p>
+                    <span>
+                        <p>Q35</p>
+                    </span>
+
+                </div>
+            </div>
+
+            <!--Fiambre-->
+            <div class="card">
+                <div class="card-image"><img src="images/fiambre.jpg"></div>
+
+                <div class="card-text">
+                    <h3>Fiambre</h3>
+                    <p>A mixture of cold cuts and vegetables, chicken broth, cheeses and more that requires weeks of
+                        preparation and a lot of work. Still, it is a traditional dish of the celebration on All Saints'
+                        Day, an exceptional mix of flavors.
+                    </p>
+                    <span>
+                        <p>Q40</p>
+                    </span>
+
+                </div>
+            </div>
+
+            <!--Kak Ik-->
+            <div class="card">
+                <div class="card-image"><img src="images/kac-iq.jpg"></div>
+
+                <div class="card-text">
+                    <h3>Kak Ik</h3>
+                    <p>A dish typical of the Q'eqchi 'region, this broth is one of the favorites for its “chunto”
+                        (turkey) meat, different vegetables, spices and chili, a lot of chili. Rice to accompany,
+                        "pochitos" (butter tamales) and cocoa or pinol to drink. A delight.
+                    </p>
+                    <span>
+                        <p>Q30</p>
+                    </span>
+
+                </div>
+            </div>
+
+            <!--Pepián-->
+            <div class="card">
+                <div class="card-image"><img src="images/pepian.jpg"></div>
+
+                <div class="card-text">
+                    <h3>Pepián</h3>
+                    <p>Some of the ingredients of this Guatemalan delicacy are guaque chili, raisin, pepitoria,
+                        cinnamon, tomato, banana peel, tomato, cinnamon and much more. This dish is very special since
+                        it is prepared with 100% Guatemalan ingredients with an artisanal elaboration.
+                    </p>
+                    <span>
+                        <p>Q25</p>
+                    </span>
+
+                </div>
+            </div>
+
+            <!--Tamal-->
+            <div class="card">
+                <div class="card-image"><img src="images/tamal.jpeg"></div>
+
+                <div class="card-text">
+                    <h3>Tamal</h3>
+                    <p>With corn dough and an errand along with chicken or pork, tamales are a favorite meal on
+                        Saturdays, or at New Year's Eve parties. Along with a French bread and coffee, great.
+                    </p>
+                    <span>
+                        <p>Q20</p>
+                    </span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Área de Pedido do Site-->
+
+    <section class="order" id="order">
+        <h1>Your Order</h1>
+        <div class="inputs">
+            <form>
+                <label>Name:</label><br>
+                <input type="text" placeholder="Enter your name:" required>
+
+                <label>E-mail:</label>
+                <input type="text" placeholder="Enter your e-mail:" required>
+
+                <label>Phone:</label>
+                <input type="tel" placeholder="Enter you phone:" required>
+
+                <label>Address:</label>
+                <input type="text" placeholder="Enter your address:" required>
+
+                <label>Orders:</label>
+                <input list="orders" class="list" placeholder="Your Orders">
+
+                <datalist id="orders">
+                    <option>Paches</option>
+                    <option>Fiambre</option>
+                    <option>Pak Ik</option>
+                    <option>Pepián</option>
+                    <option>Tapal</option>
+                </datalist>
+
+                <label>Quantity:</label>
+                <input type="number" placeholder="Quantity" class="list">
+
+                <h2>Price:</h2>
+
+                <div class="buttons">
+                    <input type="submit" value="Send Order">
+                    <input type="submit" value="Clean Order">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!--Rodapé do Site-->
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-text">
+                <p>Address: 4a Calle Oriente #015 CC La Fuente Antigua Guatemala, 00000, Guatemala</p>
+                <p>Phone: +502 3180 8285</p>
+                <p>E-mail: info@guatemalaflavors.gt</p>
+            </div>
+
+            <div class="footer-social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

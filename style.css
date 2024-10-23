@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;  /* Cria uma transição suave ao rolar a pagina através do link.*/
+    scroll-padding-top: 120px;
+}
+
+/* Menu do Restaurante*/
+
+header{
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px solid #cc6260;
+    position: fixed;
+    z-index: 9999;
+    background-color: #FFF;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.itens ul{
+    display: flex;
+    width: 100%;
+}
+
+.itens ul li{
+    margin-left: 2rem;
+    list-style-type: none;
+}
+
+.itens ul li a{
+    color: #4b96cc;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.itens ul li a:hover{
+    color: #cc6260;
+    border-bottom: 1px solid #cc6260;
+}
+
+/* Banner do Restaurante */
+
+section.home{
+    height: 100vh;
+    background-image: url(images/pexels-skitterphoto-9315.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.home .home-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px); /* Cria um desfoque do background em relação ao texto! */
+}
+
+section.home .home-text h2{
+    font-size: 40px;
+}
+
+section.home .home-text h3{
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+section.home .home-text a{
+    background-color: #4b96cc;
+    color: #FFF;
+    padding: 10px;
+    margin-top: 30px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+section.home .home-text a:hover{
+    background-color: #FFF;
+    color: #4b96cc;
+}
+
+/* Sobre do Restaurante */
+
+ section.about{
+    height: 90vh;
+    max-width: 100%;
+    margin: 0 auto;
+    border-bottom: 2px solid #4b96cc;
+} 
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.about-text h2{
+    color: #cc6260;
+    font-size: 40px;
+}
+
+.about-text p{
+    text-align: justify;
+    max-width: 500px;
+    padding-top: 10px;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.about-image{
+    width: 350px;
+    height: 550px;
+}
+
+.about-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px #000;
+}
+
+/*Cardápio do Restaurante*/
+
+section.menu{
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px solid #cc6260;
+}
+
+section.menu h1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+    color: #4b96cc;
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    background-color: transparent;
+    width: 300px;
+    height: 520px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #cc6260;
+    box-shadow: 0 0 10px #000;
+}
+
+.card-text h3{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.card-text p{
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 22px;
+}
+
+
+.card-text span{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card-image{
+    width: 260px;
+    height: 200px;
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Página de Pedidos do Restaurante */
+
+section.order{
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+section.order h1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+    color: #cc6260;
+}
+
+.inputs form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.inputs label{
+    margin-top: 20px;
+}
+
+.inputs input[type=text]{
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+.inputs input[type=tel]{
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+.inputs .list{
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+.inputs h2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.buttons{
+    padding-top: 30px;
+}
+
+.buttons input[type=submit]{
+    margin-left: 10px;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    border-radius: 10px;
+    background-color: #4b96cc;
+    transition: .3s;
+}
+
+.buttons input[type=submit]:hover{
+    color: #4b96cc;
+    background-color: #FFF;
+    border: 1px solid #4b96cc;
+}
+
+.buttons input[type=submit]:nth-child(2){ /* nth-child é uma pseudo-classe que permite escolher um elemento que está no elemento pai através do índice*/
+    background-color: #cc6260;
+}
+
+.buttons input[type=submit]:nth-child(2):hover{
+    color: #cc6260;
+    background-color: #FFF;
+    border: 1px solid #cc6260;
+}
+
+/* Rodapé do Restaurante */
+
+footer{
+    background-color: #222;
+    padding: 20px;
+    height: 20vh;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-text{
+    color: #FFF;
+}
+
+.footer-text p{
+    margin: 10px 0;
+}
+
+.footer-social{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-social i{
+    color: #FFF;
+    font-size: 35px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
